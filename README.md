@@ -12,7 +12,6 @@
 cd /Terraform
 terraform init
 terraform apply
-cp tfkey.pem ../ansible
 ```
   2- Using Ansible to install and configure Jenkins on our EC2 instance.
   Change the permissions of the key pair.
