@@ -1,9 +1,9 @@
 resource "aws_iam_role" "eks-iam-role" {
-  name = "devopsthehardway-eks-iam-role"
+  name = "eks-iam-role"
 
   path = "/"
 
-  assume_role_policy = <<EOF
+  assume_role_policy = <<POLICY
 {
  "Version": "2012-10-17",
  "Statement": [
@@ -16,6 +16,6 @@ resource "aws_iam_role" "eks-iam-role" {
   }
  ]
 }
-EOF
+POLICY
 
 }
